@@ -22,12 +22,12 @@ PS: 이전 버전을 읽으셨다구요? 새로운 변경점을 확인해보세�
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Structure of the Examples](#structure-of-the-examples)
-- [Usage](#usage)
-- [👀 Examples](#-examples)
-  - [Section: Strain your brain!](#section-strain-your-brain)
-    - [▶ Strings can be tricky sometimes *](#-strings-can-be-tricky-sometimes-)
-    - [▶ Time for some hash brownies!](#-time-for-some-hash-brownies)
+- [예시 목록](#예시-목록)
+- [사용법](#사용법)
+- [👀 재밌는 예시들](#-재밌는-예시들)
+  - [섹션: 뇌를 강화시켜봐요!](#섹션-뇌를-강화시켜봐요)
+    - [▶ String은 가끔 말썽을 일으켜요 *](#-String은-가끔-말썽을-일으켜요-)
+    - [▶ 해시 브라운 먹을 사람!](#-해시-브라운-먹을-사람)
     - [▶ Return return everywhere!](#-return-return-everywhere)
     - [▶ Deep down, we're all the same. *](#-deep-down-were-all-the-same-)
     - [▶ For what?](#-for-what)
@@ -90,41 +90,41 @@ PS: 이전 버전을 읽으셨다구요? 새로운 변경점을 확인해보세�
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Structure of the Examples
+# 예시 목록
 
-All the examples are structured like below:
+모든 예시는 아래와 같이 이루어져있습니다.:
 
-> ### ▶ Some fancy Title *
-> The asterisk at the end of the title indicates the example was not present in the first release and has been recently added.
+> ### ▶ 쫌 쩌는 제목 *
+> 끝에 에스터리스크(*)가 붙어있는 건 후에 추가된 내용이라는 것을 의미합니다.
 >
 > ```py
-> # Setting up the code.
-> # Preparation for the magic...
+> # 코드 작성
+> # 마법 부릴 준비 중
 > ```
 >
-> **Output (Python version):**
+> **출력 (파이썬의 버전):**
 > ```py
-> >>> triggering_statement
-> Probably unexpected output
+> >>> 예측 가능한 결과를 기다리는 코드
+> 예측하지 못한 결과
 > ```
-> (Optional): One line describing the unexpected output.
+> (선택적): 예측하지 못한 결과에 대한 간단한 설명
 >
 >
-> #### 💡 Explanation:
+> #### 💡 설명해볼까요:
 >
-> * Brief explanation of what's happening and why is it happening.
+> * 어떤 일이 벌어졌고, 왜 벌어졌는지.
 >   ```py
->   Setting up examples for clarification (if necessary)
+>   (필요하다면) 설명을 위한 예시 작성
 >   ```
->   **Output:**
+>   **출력:**
 >   ```py
->   >>> trigger # some example that makes it easy to unveil the magic
->   # some justified output
+>   >>> 마법을 밝혀낼 멋진 코드
+>   # 밝혀진 결과!
 >   ```
 
-**Note:** All the examples are tested on Python 3.5.2 interactive interpreter, and they should work for all the Python versions unless explicitly specified in the description.
+**Note:** 모든 예시는 파이썬 3.5.2로 테스트되었습니다. 또한 '설명해볼까요'에 따로 작성된 것이 없다면, 3.5.2가 아닌 또 다른 버전에서도 작동할 것입니다.
 
-# Usage
+# 사용법
 
 A nice way to get the most out of these examples, in my opinion, will be just to read the examples chronologically, and for every example:
 - Carefully read the initial code for setting up the example. If you're an experienced Python programmer, most of the times you will successfully anticipate what's going to happen next.
@@ -150,19 +150,19 @@ Now, just run `wtfpython` at the command line which will open this collection in
 
 ---
 
-# 👀 Examples
+# 👀 재밌는 예시들
 
 
-## Section: Strain your brain!
+## 섹션: 뇌를 강화시켜봐요!
 
-### ▶ Strings can be tricky sometimes *
+### ▶ String은 가끔 말썽을 일으켜요 *
 
 1\.
 ```py
 >>> a = "some_string"
 >>> id(a)
 140420665652016
->>> id("some" + "_" + "string") # Notice that both the ids are same.
+>>> id("some" + "_" + "string") # 두 id가 같다는 걸 명심하세요
 140420665652016
 ```
 
@@ -191,7 +191,7 @@ True
 False
 ```
 
-Makes sense, right?
+퍽이나 말이 되는 얘기죠?
 
 #### 💡 Explanation:
 + Such behavior is due to CPython optimization (called string interning) that tries to use existing immutable objects in some cases rather than creating a new object every time.
@@ -207,7 +207,7 @@ Makes sense, right?
 
 ---
 
-### ▶ Time for some hash brownies!
+### ▶ 해시 브라운 먹을 사람!
 
 1\.
 ```py
